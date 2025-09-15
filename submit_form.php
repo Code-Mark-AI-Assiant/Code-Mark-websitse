@@ -13,4 +13,7 @@
     } else {
         echo "Form not submitted via POST method.";
     }
+time_sleep_until(microtime(true) + 2);
+    exit( header("Location: New.html") );//after 2 seconds, exit the script then return to the form page
     ?>
+
