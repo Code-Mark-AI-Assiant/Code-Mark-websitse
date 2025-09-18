@@ -1,4 +1,4 @@
-<?php
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Retrieve and sanitize the data
         $name = htmlspecialchars($_POST['user_name']);
@@ -15,4 +15,4 @@
     }
     time_sleep_until(microtime(true) + 2);
     exit( header("Location: New.html") );//after 2 seconds, exit the script then return to the form page
-    ?>
+    
